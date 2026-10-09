@@ -236,6 +236,28 @@
       margin-bottom: 14px;
     }
 
+    .book h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .book h2 a:hover {
+      color: var(--accent);
+    }
+
+    .cover {
+      display: block;
+      overflow: hidden;
+    }
+
+    .cover img {
+      transition: transform 0.3s;
+    }
+
+    .cover:hover img {
+      transform: scale(1.02);
+    }
+
     .book p {
       margin: 0 0 16px;
       max-width: 46em;
@@ -377,10 +399,12 @@
     <div class="wrap">
       <p class="section-label">Open textbook</p>
       <article class="book">
-        <img src="assets/course_collage.webp" width="1536" height="540"
-          alt="A collage of figures from the book: color quantization, HSV color shifts, gamma curves, a face-space scatter plot, edge detection, and contrast enhancement">
+        <a class="cover" href="https://profstough.github.io/imageprocessing-awesome/" tabindex="-1" aria-hidden="true">
+          <img src="assets/course_collage.webp" width="1536" height="540"
+            alt="A collage of figures from the book: color quantization, HSV color shifts, gamma curves, a face-space scatter plot, edge detection, and contrast enhancement">
+        </a>
         <div class="book-body">
-          <h2>Digital Image Processing in Python</h2>
+          <h2><a href="https://profstough.github.io/imageprocessing-awesome/">Digital Image Processing in Python</a></h2>
           <p>
             Imaging is everywhere. This interactive textbook covers the acquisition, processing,
             and analysis of digital images, from the human visual system, to image and video
